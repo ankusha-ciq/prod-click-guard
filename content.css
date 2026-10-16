@@ -1,0 +1,28 @@
+#ciq-prod-banner {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 2147483646;
+  background: #c62828; color: #fff; font: 600 12px/20px system-ui, sans-serif;
+  text-align: center; height: 20px; pointer-events: none; letter-spacing: .06em;
+}
+#ciq-prod-guard-overlay {
+  position: fixed; inset: 0; z-index: 2147483647;
+  background: rgba(0,0,0,.55); display: flex; align-items: center; justify-content: center;
+  font: 14px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; color: #1a1a1a;
+}
+.ciq-prod-guard-modal {
+  background: #fff; border-radius: 10px; width: min(460px, 92vw); padding: 20px 24px;
+  box-shadow: 0 20px 60px rgba(0,0,0,.4); border-top: 6px solid #c62828;
+}
+.ciq-pg-header { display: flex; align-items: center; gap: 10px; margin-bottom: 8px; }
+.ciq-pg-icon { font-size: 24px; }
+#ciq-pg-title { margin: 0; font-size: 18px; color: #c62828; }
+.ciq-pg-host { margin: 0 0 8px; font-family: ui-monospace, Menlo, monospace; font-size: 13px; color: #555; }
+.ciq-prod-guard-modal p { margin: 0 0 12px; }
+.ciq-prod-guard-modal code.ciq-pg-target { background: #f3f3f3; padding: 2px 6px; border-radius: 4px; font-size: 12px; }
+.ciq-pg-snooze { display: flex; align-items: center; gap: 8px; font-size: 13px; color: #444; margin-bottom: 16px; cursor: pointer; }
+.ciq-pg-actions { display: flex; justify-content: flex-end; gap: 10px; }
+.ciq-pg-actions button {
+  padding: 8px 16px; border-radius: 6px; border: 1px solid #ccc; background: #fff;
+  font: inherit; cursor: pointer;
+}
+.ciq-pg-actions .ciq-pg-confirm { background: #c62828; border-color: #c62828; color: #fff; font-weight: 600; }
+.ciq-pg-actions button:focus-visible { outline: 3px solid #90caf9; outline-offset: 2px; }
